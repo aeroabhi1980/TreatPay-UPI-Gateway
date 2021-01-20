@@ -6,7 +6,6 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "in.abhiworld.upigateway"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
