@@ -1,3 +1,2 @@
-include ':UPILibrary'
 include ':app'
 rootProject.name = "UPI Gateway"
