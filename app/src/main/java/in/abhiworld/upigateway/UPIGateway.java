@@ -53,7 +53,7 @@ public class UPIGateway extends AppCompatActivity {
         Intent intent = getIntent();
         amount=intent.getStringExtra("amount");
         email=intent.getStringExtra("email");
-        Global.mobile=mobile;
+        Global.amount=Double.parseDouble(amount);
         Global.email=email;
 
         // Enable Javascript
