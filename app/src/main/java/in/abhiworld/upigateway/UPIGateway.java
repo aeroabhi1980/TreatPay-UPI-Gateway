@@ -59,7 +59,7 @@ public class UPIGateway extends AppCompatActivity {
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         webSettings.setAllowContentAccess(true);
-        mWebView.addJavascriptInterface(new WebAppInterface(getApplicationContext()), "ApuSDK");
+        mWebView.addJavascriptInterface(new WebAppInterface(this), "ApuSDK");
 
         // REMOTE RESOURCE
         mWebView.loadUrl(Wrap.t5());
