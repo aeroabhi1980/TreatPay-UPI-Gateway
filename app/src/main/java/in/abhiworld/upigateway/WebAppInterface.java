@@ -61,6 +61,7 @@ public class WebAppInterface {
     public void openUPIHandler(String upiPackage,String activity){
         Uri uri = Uri.parse("upi://pay?pa="+payeeAddress+"&pn="+payeeName+"&tn="+transactionNote+
                 "&am="+amount+"&cu="+currencyUnit+"&tr="+Global.order_id+"&mc=0000&mam=1");
+        Log.d("app link",uri.toString());
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         intent.setClassName(upiPackage,activity);
         ((Activity) mContext).startActivityForResult(intent,23);
